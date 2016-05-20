@@ -1,0 +1,277 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+<head>
+    <!-- Site Title-->
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="date" content="Dec 26">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,700,900%7CYesteryear">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    <style>
+        #registerDiv {
+            display: none;
+        }
+    </style>
+
+    <link href="http://common.5ytechnologies.com/Controls/ThirdParty/DateTimePicker/DateTimePicker.css" rel='stylesheet' type='text/css' />
+    <script src="http://common.5ytechnologies.com/Js/jquery-2.1.4.min.js"></script>
+    <script src="http://common.5ytechnologies.com/Controls/ThirdParty/DateTimePicker/DateTimePicker.js"></script>
+
+    <!--<link href="http://192.168.2.13:8020/Controls/ThirdParty/DateTimePicker/DateTimePicker.css" rel='stylesheet' type='text/css' />
+    <script src="http://192.168.2.13:8020/Js/jquery-2.1.4.min.js"></script>
+    <script src="http://192.168.2.13:8020/Controls/ThirdParty/DateTimePicker/DateTimePicker.js"></script>-->
+
+
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+
+
+
+
+    <script type="text/javascript">
+        //var CommonCDN_URL = "http://192.168.2.13:8020";
+        //var ProductCDN_URL = "http://192.168.2.13:8030";
+        //var CommonServices_URL = "http://192.168.2.13:8040";// "http://192.168.2.13:8040";
+        //var RealtimeServer_URL = "http://192.168.2.13:8070";
+        //var UploadService_URL = "http://192.168.2.14:8010";
+
+        var CommonCDN_URL = "http://common.5ytechnologies.com";
+        var ProductCDN_URL = "http://product.5ytechnologies.com";
+        var CommonServices_URL = "http://bos.services.5ytechnologies.com";// "http://192.168.2.13:8040";
+        var RealtimeServer_URL = "http://bos.realtimeservices.5ytechnologies.com";
+        var UploadService_URL = "http://bos.uploadutility.5ytechnologies.com";
+
+        var HomeUrl = '';
+        var GoogleClientID = '827260551295-qcu4l87408eobpj5bop6ml1t8lfg508c.apps.googleusercontent.com';
+        var OutlookClientID = '0000000040175597';
+        var FacebookAppID = '1617225365204598';
+
+        //var HomeUrl = "";
+        //var GoogleClientID = "";
+        //var OutlookClientID ="";
+        //var FacebookAppID = "";
+    </script>
+
+    <script src="js/login.js"></script>
+
+</head>
+<body>
+    <!-- Page-->
+    <div class="page text-center">
+        <!-- Page Content-->
+        <main class="page-content bg-shark-radio">
+            <div class="one-page">
+                <div class="one-page-header">
+                    <!--Navbar Brand-->
+                    <div class="rd-navbar-brand"><a href="index.html"><img style='margin-top: -5px;' src='images/5Y/logo-light.png' alt='' /></a></div>
+                </div>
+
+                <section>
+                    <div class="shell">
+                        <div class="range">
+                            <div class="section-110 section-cover range range-xs-center range-xs-middle">
+                                <!-- Login-->
+                                <div id="loginDiv" class="cell-xs-8 cell-sm-6 cell-md-4">
+                                    <div class="panel section-34 section-sm-41 inset-left-20 inset-right-20 inset-sm-left-20 inset-sm-right-20 inset-lg-left-30 inset-lg-right-30 bg-white shadow-drop-md">
+                                        <span id="btn_Loginclose" class="pull-right" style="position: relative;top: -29px;right: 0px; /* color: #fff; */"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                        <!-- Icon Box Type 4--><span class="icon icon-circle icon-bordered icon-lg icon-default mdi mdi-account-multiple-outline"></span>
+                                        <div>
+                                            <div class="offset-top-24 text-darker big text-bold">Login to your account</div>
+                                            <p class="text-extra-small text-dark offset-top-4">Enter your credentials below</p>
+                                        </div>
+                                        <!-- RD Mailform-->
+                                        <form data-form-output="form-output-global" data-form-type="contact" method="post" class="text-left offset-top-30">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
+                                                    <input id="txtUserName" placeholder="Your Login" type="text" name="login" data-constraints="@Required" class="form-control ">
+                                                </div>
+                                            </div>
+                                            <div class="form-group offset-top-20">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-lock-open-outline"></span></span>
+                                                    <input id="txtPassword" placeholder="Your Password" type="password" name="password" data-constraints="@Required" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div id="btnSubmit1" class="btn btn-sm btn-icon btn-block btn-primary offset-top-20">Sign In <span class="icon mdi mdi-arrow-right-bold-circle-outline"></span></div>
+                                        </form>
+                                        <div class="offset-top-30 text-sm-left text-dark text-extra-small">
+                                            <!--<a href="#" class="text-picton-blue">Forgot your password?</a>-->
+                                            <div class="offset-top-0">Dont have an account? <a id="login_register_btn" class="text-picton-blue pointer">Sign up here</a>.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registration-->
+                                <div id="registerDiv" class="cell-xs-8 cell-sm-6 cell-md-4">
+                                    <div class="panel section-34 section-sm-41 inset-left-20 inset-right-20 inset-sm-left-20 inset-sm-right-20 inset-lg-left-30 inset-lg-right-30 bg-white shadow-drop-md">
+                                        <span id="btn_registerclose" class="pull-right" style="position: relative;top: -29px;right: 0px; /* color: #fff; */"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+                                        <!-- Icon Box Type 4--><span class="icon icon-circle icon-bordered icon-lg icon-default mdi mdi-account-multiple-outline"></span>
+                                        <div>
+                                            <div class="offset-top-24 text-darker big text-bold">Create your account</div>
+                                            <p class="text-extra-small text-dark offset-top-4">All fields are required</p>
+                                        </div>
+                                        <!-- RD Mailform-->
+                                        <form data-form-output="form-output-global" data-form-type="contact" method="post" class="text-left offset-top-10">
+
+                                            <div class="form-group offset-top-10">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-email-outline"></span></span>
+                                                    <input id="txtemail" placeholder="E-Mail" type="email" name="email" data-constraints="@Required @Email" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-lock-open-outline"></span></span>
+                                                    <input id="txtpassword" placeholder="Password" type="password" name="password" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
+                                                    <input id="txtfirstName" placeholder="First Name" type="text" name="first-name" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
+                                                    <input id="txtlastName" placeholder="Last Name" type="text" name="last-name" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
+                                                    <input id="txtdisplayName" placeholder="Display Name" type="text" name="display-name" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
+                                                    <input id="txtdatetimepicker1" placeholder="Date of birth" type="text" name="dob" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group offset-top-10">
+                                                <label class="control-label">Gender :</label>
+                                                <label class="control-label">
+                                                    <input name="login-radio" id="rdbfemaleRadio" value="Female" type="radio" class="checkbox-custom"> Female
+                                                </label>
+                                                <label class="control-label">
+                                                    <input name="login-radio" id="rdbmaleRadio" value="Male" type="radio" class="checkbox-custom"> Male
+                                                </label>
+
+                                            </div>
+
+                                            <!--<div class="form-group offset-top-10">
+                                                <label class="checkbox-inline">
+                                                    <input name="login-radio" value="checkbox-1" type="checkbox" class="checkbox-custom"><span class="checkbox-custom-dummy"></span><span class="text-dark text-extra-small">I agree with the <a href="#" class="text-picton-blue">Terms of use</a>.</span>
+                                                </label>
+                                            </div>-->
+                                            <div id="btnSubmitRegistration" class="btn btn-xs btn-icon btn-block btn-primary offset-top-20">Sign Up <span class="icon mdi mdi-arrow-right-bold-circle-outline"></span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <div class="one-page-footer">
+                    <p style="color: rgba(255,255,255, 0.3)" class="small"><a href="index.html">5Y &copy;</a> <span id="copyright-year"></span> . <a href="privacy.html">Privacy Policy</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    <!-- PhotoSwipe Gallery-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                    <button title="Share" class="pswp__button pswp__button--share"></button>
+                    <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                    <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+                <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Java script-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#txtUserName").focus();
+
+        });
+        var dateObj = new Date();
+        var currentDate = (dateObj.getMonth() + 1) + "/" + dateObj.getDate() + "/" + dateObj.getFullYear();
+        
+        initDateTimePicker();
+
+        function authDone() {
+            window.location.href = "index.html";
+        };
+
+
+
+
+
+    </script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61672777-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+<head>
+    <!-- Site Title-->
+    <title>Blog - 5Y Technologies</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="date" content="Dec 26">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,700,900%7CYesteryear">
+
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+
+
+    <script type="text/javascript">
+        //var CommonCDN_URL = "http://192.168.2.13:8020";
+        //var ProductCDN_URL = "http://192.168.2.13:8030";
+        //var CommonServices_URL = "http://192.168.2.13:8040";// "http://192.168.2.13:8040";
+        //var RealtimeServer_URL = "http://192.168.2.13:8070";
+        //var UploadService_URL = "http://192.168.2.14:8010";
+
+        var CommonCDN_URL = "http://common.5ytechnologies.com";
+        var ProductCDN_URL = "http://product.5ytechnologies.com";
+        var CommonServices_URL = "http://bos.services.5ytechnologies.com";// "http://192.168.2.13:8040";
+        var RealtimeServer_URL = "http://bos.realtimeservices.5ytechnologies.com";
+        var UploadService_URL = "http://bos.uploadutility.5ytechnologies.com";
+
+
+
+        //var HomeUrl = "";
+        //var GoogleClientID = "";
+        //var OutlookClientID ="";
+        //var FacebookAppID = "";
+    </script>
+
+    <link href="http://common.5ytechnologies.com/Css/bootstrap.min.css?5thnovember2015" rel="stylesheet" />
+    <link href="http://common.5ytechnologies.com/Css/font-awesome.min.css?5thnovember2015'" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,400italic,700' rel='stylesheet' type='text/css' />
+    <link href="http://common.5ytechnologies.com/Css/framework.css" rel="stylesheet" />
+    <link href="http://product.5ytechnologies.com/Blog/Css/blog.css" rel="stylesheet" />
+    <link href="http://product.5ytechnologies.com/Blog/Css/comments.css" rel="stylesheet" />
+    <script src="http://product.5ytechnologies.com/Blog/Js/Comments.js"></script>
+    <script src="http://common.5ytechnologies.com/Js/jquery-2.1.4.min.js"></script>
+    <script src="http://common.5ytechnologies.com/Js/bootstrap_3.3.4.min.js?5rdnovember2015"></script>
+    <script src="http://common.5ytechnologies.com/Js/framework.js"></script>
+    <script src="http://common.5ytechnologies.com/Controls/ThirdParty/DownloadAll/DownloadAll.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://product.5ytechnologies.com/News/Js/News.js"></script>
+
+
+    <!--<link href="http://192.168.2.13:8020/Css/bootstrap.min.css?5thnovember2015" rel="stylesheet" />
+    <link href="http://192.168.2.13:8020/Css/font-awesome.min.css?5thnovember2015'" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,400italic,700' rel='stylesheet' type='text/css' />
+    <link href="http://192.168.2.13:8020/Css/framework.css" rel="stylesheet" />
+    <link href="http://192.168.2.13:8030/Blog/Css/blog.css" rel="stylesheet" />
+    <link href="http://192.168.2.13:8030/Blog/Css/comments.css" rel="stylesheet" />
+    <script src="http://192.168.2.13:8030/Blog/Js/Comments.js"></script>
+    <script src="http://192.168.2.13:8020/Js/jquery-2.1.4.min.js"></script>
+    <script src="http://192.168.2.13:8020/Js/bootstrap_3.3.4.min.js?5rdnovember2015"></script>
+    <script src="http://192.168.2.13:8020/Js/framework.js"></script>
+    <script src="http://192.168.2.13:8020/Controls/ThirdParty/DownloadAll/DownloadAll.js"></script>
+    <link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="http://192.168.2.13:8030/News/Js/News.js"></script>-->
+
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
+
+</head>
+<body>
+    <!-- Page-->
+    <div class="page text-center scroll-call" style="overflow:scroll;overflow-x:hidden;height: 100vh;">
+        <div class="page-loader page-loader-variant-1">
+            <div>
+                <img class='img-responsive' style='margin-top: -20px;margin-left: -18px;' width='330' height='67' src='images/5Y/logo-big.png' alt='' />
+                <div class="offset-top-41 text-center">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Head-->
+        <header class="page-head slider-menu-position">
+            <!-- RD Navbar Transparent-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-default rd-navbar-transparent" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+                    <div class="rd-navbar-inner" style="background:#000">
+                        <!-- RD Navbar Panel-->
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                            <!--Navbar Brand-->
+                            <div class="rd-navbar-brand"><a href="index.html"><img style='margin-top: -5px;' src='images/5Y/logo-light.png' alt='' /></a></div>
+                        </div>
+                        <div class="rd-navbar-menu-wrap">
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-mobile-scroll">
+                                    <!--Navbar Brand Mobile-->
+                                    <div class="rd-navbar-mobile-brand"><a href="index.html"><img style='margin-top: -5px;margin-left: -15px;' src='images/5Y/logo-light.png' alt='' /></a></div>
+                                    <div class="form-search-wrap">
+                                        <form action="search-results.html" method="GET" class="form-search">
+                                            <div class="form-group">
+                                                <label for="rd-navbar-form-search-widget" class="form-label form-search-label form-label-sm">Search</label>
+                                                <input id="rd-navbar-form-search-widget" type="text" name="s" autocomplete="off" class="form-search-input input-sm form-control form-control-gray-lightest input-sm" />
+                                            </div>
+                                            <button type="submit" class="form-search-submit"><span class="mdi mdi-magnify"></span></button>
+                                        </form>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+
+                                        <li>
+                                            <a href="aboutus.html"><span>About Us</span></a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li>
+                                                    <a href="ourstory.html"><span class="text-middle">Our Story</span></a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="why5Y.html"><span class="text-middle">Why 5Y</span></a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="ourteam.html"><span class="text-middle">Our Team</span></a>
+
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="solutions.html"><span>Solutions</span></a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li>
+                                                    <a href="BOS"><span class="text-middle">BOS</span></a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="Raksha"><span class="text-middle">Raksha</span></a>
+
+                                                </li>
+
+                                                <li>
+                                                    <a href="TV"><span class="text-middle">TV</span></a>
+
+                                                </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="services.html"><span>Services</span></a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-xml" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style="font-weight:300" href="itconsulting_projectdelivery.html"> IT Consulting & <br />Project Delivery</a>
+                                                    <hr class="bg-mantis" style="margin:0">
+                                                </li>
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-cellphone" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style="font-weight:300" href="enterprisetechnologysolutions.html"> Enterprise Technologies <br />Solutions</a>
+                                                    <hr class="bg-mantis" style="margin:0">
+                                                </li>
+
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-cube" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style=" font-weight:300" href="arvr.html"> Augmented Reality & <br />Virtual Reality</a>
+                                                    <hr class="bg-mantis" style="margin:0">
+                                                </li>
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-vector-arrange-below" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style="font-weight:300" href="businessintelligence_predictiveanalysis.html"> Business Intelligence & <br />Predictive Analysis</a>
+                                                    <hr class="bg-mantis" style="margin:0">
+                                                </li>
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-cloud" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style="font-weight:300" href="privatecloudimplementation.html"> Private Cloud <br />Implementation</a>
+                                                    <hr class="bg-mantis" style="margin:0">
+                                                </li>
+                                                <li class="text-center">
+                                                    <span class="text-acapulco mdi mdi-earth" style="display:block; text-align:center; font-size:18px"></span>
+                                                    <a style="font-weight:300" href="outsourcingservices.html"> Outsourcing Services</a>
+
+                                                </li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html"><span>Blog</span></a>
+
+                                        </li>
+                                        <li>
+                                            <a href="contactus.html"><span>Contact Us</span></a>
+
+                                        </li>
+                                        <li id="loginNav">
+                                            <a href="login.html"><span>Login</span></a>
+
+                                        </li>
+                                        <li id="userloggedinDiv">
+                                            <a href="#">
+                                                <img class="img-circle" src="images/users/user-amanda-smith-90x90.jpg" style="height:32px; width:32px" />
+                                            </a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li>
+                                                    <a href="#"><span class="text-middle" id="Username">Hello AMITABHA</span></a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span id="Logout" class="text-middle">Logout</span></a>
+
+                                                </li>
+
+
+
+
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--RD Navbar Search-->
+                            <!--<div class="rd-navbar-search">
+                                <a data-rd-navbar-toggle=".rd-navbar-inner,.rd-navbar-search" href="#" class="rd-navbar-search-toggle mdi"><span></span></a>
+                                <form action="search-results.html" method="GET" class="rd-navbar-search-form search-form-icon-right">
+                                    <div class="form-group">
+                                        <label for="rd-navbar-search-form-input" class="form-label">Type and hit enter...</label>
+                                        <input id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest" />
+                                    </div>
+
+                                </form>
+
+                            </div>-->
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--Swiper-->
+
+        </header>
+
+        <!-- Page Contents-->
+        <main class="page-content section-98 section-sm-top-110 section-sm-top-144">
+            <div class="shell">
+                <div class="range range-sm-center range-lg-left">
+                    <div class="cell-md-8 cell-md-push-1 inset-md-left-30">
+                        <!-- Classic Thumbnail-->
+                        <!-- Classic Gallery Carousel-->
+                        <!-- Classic Thumbnail-->
+                        <!-- Embed Video-->
+                        <!-- Classic Soundcloud Player-->
+                        <!-- Blog Classic-->
+                        <section id="blog_postSection" style="overflow-y:auto;overflow-x:hidden"></section>
+                        <section>
+                            <div class="offset-top-66">
+
+                                <!-- Classic Pagination-->
+                                <nav>
+                                    <ul class="pagination-classic">
+                                        <!--<li><a href="#">Prev</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">Next</a></li>-->
+                                    </ul>
+                                </nav>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cell-md-4 cell-lg-3 cell-md-pull-1 offset-top-66 offset-md-top-0">
+                        <!-- Section Blog Modern-->
+                        <aside class="text-left offset-top-34">
+                            <!-- Search Form-->
+                            <h6 class="text-uppercase text-spacing-60">Search</h6>
+                            <div class="text-subline"></div>
+                            <div class="offset-top-34">
+                                <!-- RD Search Form-->
+                                <form class="form-search">
+                                    <div class="form-group">
+                                        <label for="txt_blog_search" class="form-label form-search-label form-label-sm">Search</label>
+                                        <input id="txt_blog_search" type="text" name="s" autocomplete="off" class="form-search-input input-sm form-control form-control-gray-lightest input-sm" maxlength="64" searchin="MyFeeds" />
+                                    </div>
+                                    <div id="btn_blog_search" class="form-search-submit"><span class="mdi mdi-magnify"></span></div>
+                                </form>
+                                <!--<form action="search-results.html" method="GET" class="form-search rd-search">
+                                    <div class="form-group">
+                                        <label for="blog-sidebar-1-form-search-widget" class="form-label form-search-label form-label-sm">Search</label>
+                                        <input id="blog-sidebar-1-form-search-widget" type="text" name="s" autocomplete="off" class="form-search-input input-sm form-control input-sm">
+                                    </div>
+                                    <button type="submit" class="form-search-submit"><span class="mdi mdi-magnify"></span></button>
+                                </form>-->
+                            </div>
+                            <!-- Flickr Feed-->
+                            <h6 class="offset-top-41 text-uppercase text-spacing-60 none">Flickr Feed</h6>
+                            <div class="text-subline none"></div>
+                            <div class="offset-top-34 none">
+                                <div data-photo-swipe="gallery" data-flickr-id="14098790@N07" class="group-xs flickr widget-flickrfeed">
+                                    <a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="800x800" data-type="flickr-item" class="flickr-item thumbnail-classic"><img width="82" height="82" data-title="alt" src="images/_blank.png" alt="" data-image_q="src"></a>
+                                </div>
+                            </div>
+                            <div class="range offset-top-41">
+                                <div class="cell-xs-6 cell-md-12">
+                                    <!-- Category-->
+                                    <h6 class="text-uppercase text-spacing-60">Categories</h6>
+                                    <div class="text-subline"></div>
+                                    <ul class="list list-marked offset-top-30" id="blogVirtualGroup">
+                                        <!--<li><a href="#">Web Design <span class="text-dark">(37)</span></a></li>
+                                        <li><a href="#">UX <span class="text-dark">(211)</span></a></li>
+                                        <li><a href="#">Marketing <span class="text-dark">(12)</span></a></li>
+                                        <li><a href="#">Events <span class="text-dark">(7)</span></a></li>
+                                        <li><a href="#">News <span class="text-dark">(15)</span></a></li>-->
+                                    </ul>
+                                </div>
+                                <div class="cell-xs-6 cell-md-12 offset-top-41 offset-xs-top-0 offset-md-top-41">
+                                    <!-- Archive-->
+                                    <h6 class="text-uppercase text-spacing-60">Archive</h6>
+                                    <div class="text-subline"></div>
+                                    <ul id="archivefilter" class="list list-marked offset-top-30">
+                                        <!--<li><a href="#">January 2016 <span class="text-dark">(17)</span></a></li>
+                                        <li><a href="#">December 2015 <span class="text-dark">(121)</span></a></li>
+                                        <li><a href="#">November 2015 <span class="text-dark">(19)</span></a></li>
+                                        <li><a href="#">October 2015 <span class="text-dark">(9)</span></a></li>
+                                        <li><a href="#">September 2015 <span class="text-dark">(25)</span></a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tags-->
+                            <!--<h6 class="offset-top-41 text-uppercase text-spacing-60">Tags</h6>
+                            <div class="text-subline"></div>
+                            <div class="offset-top-34">
+                                <div class="group-xs">
+                                    <a href="#" class="btn btn-xs btn-default">Web</a><a href="#" class="btn btn-xs btn-default">UX</a><a href="#" class="btn btn-xs btn-default">Marketing</a><a href="#" class="btn btn-xs btn-default">News</a><a href="#" class="btn btn-xs btn-default">Design</a><a href="#" class="btn btn-xs btn-default">Events</a>
+                                </div>
+                            </div>-->
+                        </aside>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Footer-->
+            <!-- Default footer-->
+
+        </main>
+        <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-gray-base context-dark">
+            <div class="shell">
+                <div class="range range-sm-center text-lg-left">
+                    <div class="cell-sm-8 cell-md-12">
+                        <div class="range range-xs-center">
+                            <div id="footerBlog" class="cell-xs-7 text-xs-left cell-md-4 cell-lg-3 cell-lg-push-4">
+                                <h6 class="text-uppercase text-spacing-60">Blog</h6>
+                                <!-- Post Widget-->
+                                <article class="post widget-post text-left">
+                                    <a href="blog.html">
+                                        <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                            <div class="unit-body">
+                                                <div class="post-meta">
+                                                    <span class="icon-xxs text-picton-blue mdi mdi-arrow-right"></span>
+                                                    <time datetime="2016-01-01" class="text-dark">05/14/2015</time>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h6 class="text-regular">Let’s Change the world</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Post Widget-->
+                                <article class="post widget-post text-left">
+                                    <a href="#">
+                                        <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                            <div class="unit-body">
+                                                <div class="post-meta">
+                                                    <span class="icon-xxs text-picton-blue mdi mdi-arrow-right"></span>
+                                                    <time datetime="2016-01-01" class="text-dark">05/14/2015</time>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h6 class="text-regular">The meaning of Web Design</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Post Widget-->
+                                <article class="post widget-post text-left">
+                                    <a href="#">
+                                        <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                            <div class="unit-body">
+                                                <div class="post-meta">
+                                                    <span class="icon-xxs text-picton-blue mdi mdi-arrow-right"></span>
+                                                    <time datetime="2016-01-01" class="text-dark">05/14/2015</time>
+                                                </div>
+                                                <div class="post-title">
+                                                    <h6 class="text-regular">Get Started with BOS</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="cell-xs-5 offset-top-41 offset-xs-top-0 text-xs-left cell-md-3 cell-lg-2 cell-lg-push-3">
+                                <h6 class="text-uppercase text-spacing-60">Useful Links</h6>
+                                <div class="reveal-block">
+                                    <div class="reveal-inline-block">
+                                        <ul class="list list-marked">
+                                            <li><a href="BOS">BOS</a></li>
+                                            <li><a href="Raksha">RAKSHA</a></li>
+                                            <li><a href="TV">TV</a></li>
+                                            <li><a href="http://tv.5ytechnologies.com" target="_blank">5Y TV DEMO </a></li>
+                                            <li><a href="contactus.html">CONTACT US</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-12 offset-top-41 cell-md-5 offset-md-top-0 text-md-left cell-lg-4 cell-lg-push-2">
+                                <h6 class="text-uppercase text-spacing-60">Newsletter</h6>
+                                <p>Stay Informed! Receive a digital copy of our free Newsletter</p>
+                                <div class="offset-top-30">
+                                    <form data-form-output="form-subscribe-footer" data-form-type="subscribe" method="post"  class="rd-mailform">
+                                        <div class="form-group">
+                                            <div class="input-group input-group-sm">
+                                                <span class="input-group-addon"><span class="input-group-icon mdi mdi-email"></span></span>
+                                                <input id="emailsub_input" placeholder="Type your E-Mail" type="email" name="email" data-constraints="@Required @Email" class="form-control"><span class="input-group-btn">
+                                                    <div id="emailSubscribe"  class="btn btn-sm btn-primary">Subscribe</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div id="form-subscribe-footer" class="form-output"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="cell-xs-12 offset-top-66 cell-lg-3 cell-lg-push-1 offset-lg-top-0">
+                                <a href="index.html"><img style='margin-top: -5px;margin-left: -15px;' src='images/5Y/logo-light.png' alt='' /></a>
+                                <p class="text-darker offset-top-4">
+                                    Business & Technology Solutions
+                                </p>
+                                <ul class="list-inline">
+                                    <li><a href="https://www.facebook.com/5ysoftwaretechnologies" target="_blank" class="icon fa fa-facebook icon-xxs icon-circle icon-darkest-filled"></a></li>
+
+
+                                    <li><a href="https://www.linkedin.com/company/5y-technologies" target="_blank" class="icon fa fa-linkedin icon-xxs icon-circle icon-darkest-filled"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shell offset-top-50">
+                <p class="small text-darker">
+                    <a href="index.html">5Y &copy;</a> <span id="copyright-year"></span> . <a href="privacypolicy.html">Privacy Policy</a>
+                    <!-- {%FOOTER_LINK}-->
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    <!-- PhotoSwipe Gallery-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                    <button title="Share" class="pswp__button pswp__button--share"></button>
+                    <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                    <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+                <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Java script-->
+    <script type="text/javascript">
+        $("scroll-call").off("scroll");
+        $("scroll-call").on("scroll", BlogApp.scrollLoad);
+    </script>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+        var properties = new Object();
+        properties.PlaceHolder = 'blog_postSection';
+        properties.ClientID = "08AD21B8-A8CD-45CF-B8EA-04DF3C0A376A"; //properties.requiredParametersvalues.ClientID;
+        properties.UserUniqueID = "2FECB025-A9B7-40FC-85D7-6A31538D49F5"; // "207BF4D4-5A14-4466-872A-EBDF3DA34EB8"; //
+        //properties.UploadedFileID = 'd31ae2a7-128e-4700-bc76-21d62589b38a';
+        //properties.AppID = 'E86765C8-56EF-41DB-9001-03166CE2B1CE';
+        properties.AppCode = 'BLOG';
+        //properties.AppType = 'BLOG';
+        properties.TokenID = 'E86765C8-56EF-41DB-9001-03166CE2B1CE';
+        properties.serviceUrl = CommonServices_URL; //"http://localhost:2268"; //
+
+        //'http://localhost:55751'; //properties.serviceUrl;
+
+
+        var returnObj = new Object();
+        var requiredParameters2 = new Object();
+        requiredParameters2.ContextID = "";
+        requiredParameters2.ClientId = properties.ClientID;
+        requiredParameters2.UniqueID = properties.UserUniqueID;
+        requiredParameters2.ProductUIFiles = ProductCDN_URL;
+        requiredParameters2.ModuleCode = "BLOG";
+        requiredParameters2.ReplyOnCommentsEnabled = true;
+        getitemarray = new Object();
+        itemarrayobj = new Array();
+        itemarrayobj.push(getitemarray);
+        requiredParameters2.itemarray = itemarrayobj;//getitemarray
+        requiredParameters2.getTimezoneName = GetTimezoneName();
+        returnObj.requiredParametersvalues = requiredParameters2;
+        returnObj.serviceUrl = CommonServices_URL; //"http://localhost:2268";//
+
+        returnObj.placeholder = "blog_CommentSection";
+
+        BlogApp.init(properties);
+
+
+
+
+
+
+
+    </script>
+
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61672777-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
